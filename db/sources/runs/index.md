@@ -2,15 +2,19 @@
 type: index
 scope: type-folder
 folder: sources/runs
-updated: 2026-10-03T23:41:34.424738Z
+updated: 2026-10-04T01:58:25.428335987Z
 ---
 
 # sources/runs
 
+- [[sources/runs/2026/10/2026-10-04-mirror-local-validation]] — All seven Mac gates, updated current-head static, and complete repaired real-model acceptance 35/0 pass on identical compiled inputs.
+- [[sources/runs/2026/10/2026-10-04-mirror-current-baseline-paired]] — Paired mirror reads on main 57aa493: all six 200-token outputs match, no swap, explicit keepalive off.
+- [[sources/runs/2026/10/2026-10-04-mirror-physical-read-witness]] — Three-round file-read protocol on M4: all 36 physical-byte witnesses pass, with no added read errors or global swap.
 - [[sources/runs/2026/10/2026-10-03-affine-three-bit-expert-control]] — Controlled affine-three-bit expert conversion and independent calibration screen
 - [[sources/runs/2026/10/2026-10-03-candidate-parallel-prefill-read-validation]] — Exact parallel prefill staging and completed-task validation; timing excluded by competing load
 - [[sources/runs/2026/10/2026-10-03-candidate-prefill-readout-memory-repair]] — Exact state-only intermediate prefill and bounded completed-task rerun
 - [[sources/runs/2026/10/2026-10-03-candidate-completed-task-calibration]] — Frozen completed-task calibration, hybrid result and full-pack memory failure
+- [[sources/runs/2026/10/2026-10-03-mirror-current-main-paired]] — Current-source mirror pairs on Mac mini M4 with explicit keepalive off: identical 200-token output and no observed swap.
 - [[sources/runs/2026/10/2026-10-03-candidate-extended-rotary-and-context]] — Authenticated candidate rotary coefficients and bounded native context recovery
 - [[sources/runs/2026/10/2026-10-03-candidate-target-verified-speculation]] — Candidate target-verified draft generation and original-model regression checks
 - [[sources/runs/2026/10/2026-10-03-candidate-state-recording-and-recovery]] — Candidate recurrent recording, exact verification rollback and interrupted-state recovery
@@ -139,6 +143,8 @@ updated: 2026-10-03T23:41:34.424738Z
 - [[sources/runs/2026/09/2026-09-20-adaptive-memory-limits]] — Adaptive memory ceilings: planner and CLI matrices, native controls and real model shrink/recovery pass; limits and earlier fixture failure retained.
 - [[sources/runs/2026/09/2026-09-20-sevra-response-details]] — Sevra records each response's engine numbers and shows its speed, thinking line and working notes on request; the real-model check matches the engine and finds thinking turns read twice
 - [[sources/runs/2026/09/2026-09-20-thinking-with-tools-and-refused-proposals]] — Think longer is available with a source attached, tool turns think, and a refused proposal is corrected instead of ending the job; measured on three real-model runs
+- [[sources/runs/2026/09/2026-09-18-mirror-router-trace-development-build]] — The router's own per-replica trace on a development build, including the queue depth at which reads are claimed
+- [[sources/runs/2026/09/2026-09-18-mirror-copies-compared-byte-for-byte]] — cmp over all twelve shards of both checkpoint copies, verdict IDENTICAL
 - [[sources/runs/2026/09/2026-09-19-sevra-names-attachments]] — Told only that files were attached, the model asked what "this" meant; with each attachment named, "what is this?" reads the attached PDF
 - [[sources/runs/2026/09/2026-09-19-complete-prompt-image-key-and-answer-narration]] — The complete-prompt check looked up image states with the wrong key and now passes 274 and 289; Sevra answers drop tool-round narration; the real-model PDF fixture is byte-stable
 - [[sources/runs/2026/09/2026-09-18-release-0-2-22-published-and-installed]] — v0.2.22 published, installed and accepted: exact CI candidate, verified provenance, byte-identical installation, full local battery and installed end to end 31/31.
@@ -148,7 +154,9 @@ updated: 2026-10-03T23:41:34.424738Z
 - [[sources/runs/2026/09/2026-09-18-memory-budget-native-verification]] — Memory budget fix: native verification and unchanged image reuse failure
 - [[sources/runs/2026/09/2026-09-18-memory-budget-software-verification]] — Memory budget fix: final software verification
 - [[sources/runs/2026/09/2026-09-18-memory-budget-regression]] — Memory budget context regression: before and after
+- [[sources/runs/2026/09/2026-09-18-mirror-decode-ab-three-rounds]] — Three paired rounds of single-disk against mirrored decode on the committed build, with a generated-text digest across all six runs
 - [[sources/runs/2026/09/2026-09-17-conversation-resume-exactness]] — A continued conversation computed different logits from a cold one, 3.7% to 5.9% of their spread, and after the resume rule computes them bit for bit
+- [[sources/runs/2026/09/2026-09-18-mirror-iostat-device-witness]] — One mirrored decode with two witnesses, the engine's own mirror-split readout and iostat on both devices
 - [[sources/runs/2026/09/2026-09-17-verify-pass-deployment-recheck]] — Decode comparisons re-run on a quiet machine after the commit: 16k and 32k
 - [[sources/runs/2026/09/2026-09-17-verify-pass-checks-and-battery]] — Check catalogue, static gates and verify battery on the final verify-pass build
 - [[sources/runs/2026/09/2026-09-17-verify-pass-decode-final-build]] — Decode comparisons at 16k and 32k on the final build: dense, split and exact
@@ -499,16 +507,8 @@ updated: 2026-10-03T23:41:34.424738Z
 - [[sources/runs/2026/09/2026-09-07-configurable-context-portable-software-acceptance]] — Configurable context software proxies and portable native qualification
 - [[sources/runs/2026/09/2026-09-07-optimization-combined-candidate-handoff]] — Combined candidate clean handback and complete37item disposition
 - [[sources/runs/2026/09/2026-09-07-optimization-consumer-build-contract]] — Standalone consumer rejects failed builds; native compilation remains unrun
-- [[sources/runs/2026/09/2026-09-07-optimization-combined-default-sampler-installer]] — Combined candidate passes sampler oracle and real local installer transitions
-- [[sources/runs/2026/09/2026-09-07-optimization-correctness-memory-policy]] — Preserved swap guard stop and explicit correctness-only VM observations
-- [[sources/runs/2026/09/2026-09-07-optimization-combined-default-metadata-and-runtime]] — Combined candidate passes native metadata, exact planner and runtime defaults
-- [[sources/runs/2026/09/2026-09-07-optimization-combined-default-candidate-build]] — Separate combined-default candidate builds and restores the shared checkout
-- [[sources/runs/2026/09/2026-09-07-optimization-api-concurrency-validation]] — Metadata concurrency acceptance requires actual completed generation
-- [[sources/runs/2026/09/2026-09-07-optimization-api-pressure-preflight-refusal]] — Corrected API qualification was not launched after headroom refusal
-- [[sources/runs/2026/09/2026-09-07-optimization-os-pressure-readiness]] — Prospective OS-pressure observation and guarded process receipts
-- [[sources/runs/2026/09/2026-09-07-optimization-api-generation-completion-validation]] — API completion validation rejects matching errors and incomplete responses
 
 ## More
 
-This folder has 761 files. The 500 most recent are listed above.
+This folder has 769 files. The 500 most recent are listed above.
 Use `dbmd query --type run --in sources` for the complete catalog.
